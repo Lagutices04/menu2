@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuBarra {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%; /* Espaciado de 50 */
+    left: 50%; /* Espaciado hacia la izquierda de 50 */
+    transform: translate(-50%, -50%) scale(4);
+    /* Como no está al 100, se le da el transform del -50 para que ajuste.
+       También se le puede dar el tamaño a las líneas de las que uno quiera */
+
+    cursor: pointer;
+}
+
+.menuBarra span {
+    display: block; /* Display tipo bloque */
+    width: 100%; /* Espaciado para cada línea */
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+    transition: none 600ms; /* Transición se vea, se pone de 600 milisegundos */
+    transform-origin: 0px 100%; /* Con esto se notará que se mueva */
+}
+
+.fila1Animacion {
+    /* Debe rotarse 35 grados y qué tanto se debe trasladar */
+    transform: rotate(45deg) translate(-2px, 1px);
+    /* Sobre eje x y eje y */
+}
+
+.fila3Animacion {
+    /* Ahora se rota en 45 grados */
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.fila2Animacion {
+    /* La fila dos desaparecerá */
+    opacity: 0;
+    margin-left: -35px; /* Se moverán 35 pixeles hacia la izquierda */
+}
+
+
+
